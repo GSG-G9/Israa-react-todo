@@ -33,13 +33,13 @@ const statusHandler=(e)=>{
             value='  Add to-do '
            onClick={handleSubmit}
             >  Add to-do </button>
-          <div className="select">
-              <select name="todo_status" className="todo_status" onChange={statusHandler}>
-                  <option value=''>All</option>
-                  <option value={true} >Completed</option>
-                  <option value={false}>Uncompleted</option>
+         
+              <select name="todo_status" className="todo-filter" onChange={statusHandler}>
+                  <option class="options" value=''>All</option>
+                  <option class="options"value={true} >Completed</option>
+                  <option class="options"value={false}>Uncompleted</option>
               </select>
-          </div>
+         
         </form>
     )
 }
