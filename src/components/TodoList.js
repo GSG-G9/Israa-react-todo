@@ -1,9 +1,9 @@
 import React from 'react';
-import {Todo} from './Todo'
+import Todo from './Todo'
 
 
 
-export const TodoList=({todos,todoStatus,setTodos,edit,setEdit,inputValue,setInputValue,updatedValue,setUpdatedValue})=>{
+ const TodoList=({todos,todoStatus,setTodos,setEdit,inputValue,setInputValue})=>{
 
     let filtered =  todos.filter((todo)=>{
         if(todoStatus==='')
@@ -37,3 +37,5 @@ return(
     </ul>
 )
 }
+
+export default TodoList;

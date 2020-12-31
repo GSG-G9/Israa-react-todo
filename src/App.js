@@ -1,8 +1,8 @@
 import React from 'react'
 import './App.css';
-import {TodoForm} from './components/TodoForm'
-import {TodoList} from './components/TodoList'
-import {EditTodoForm} from './components/EditTodoForm'
+import TodoForm from './components/TodoForm'
+import TodoList from './components/TodoList'
+import EditTodoForm from './components/EditTodoForm'
 
 export class App extends React.Component {
 state ={

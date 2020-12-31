@@ -4,8 +4,8 @@ import React from 'react';
 import {FaTrash} from 'react-icons/fa'
 import {AiFillEdit} from 'react-icons/ai'
 import {FiCheckSquare} from 'react-icons/fi'
-import {EditTodoForm} from './EditTodoForm'
-export const Todo=({text,todo,todos,setTodos,edit,setEdit,inputValue,setInputValue,updatedValue,setUpdatedValue})=>{
+
+ const Todo=({text,todo,todos,setTodos,edit,setEdit})=>{
 const deleteHandler =()=>{
     setTodos(todos.filter((element)=>{ return element.id !== todo.id}))
 }
@@ -44,3 +44,4 @@ setTodos(todos.map((element)=>{
         </div>
     )
 }
+export default Todo

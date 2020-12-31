@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const TodoForm =({inputValue,setInputValue,todos,setTodos,todoStatus,setTodoStatus})=>{
+ const TodoForm =({inputValue,setInputValue,todos,setTodos,setTodoStatus})=>{
 
     const handleSubmit=(e)=>{
         console.log('todo')
@@ -35,11 +35,13 @@ const statusHandler=(e)=>{
             >  Add to-do </button>
          
               <select name="todo_status" className="todo-filter" onChange={statusHandler}>
-                  <option class="options" value=''>All</option>
-                  <option class="options"value={true} >Completed</option>
-                  <option class="options"value={false}>Uncompleted</option>
+                  <option className="options" value=''>All</option>
+                  <option className="options"value={true} >Completed</option>
+                  <option className="options"value={false}>Uncompleted</option>
               </select>
          
         </form>
     )
 }
+
+export default TodoForm;
