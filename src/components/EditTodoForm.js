@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const EditTodoForm =({todoText,handleSubmit,handleEdit,todo,todos,setTodos,edit,setEdit,inputValue,setInputValue,updatedValue,setUpdatedValue , todoId,setTodoId})=>{
+ const EditTodoForm =({todoText,handleSubmit,setUpdatedValue })=>{
 
     
 
@@ -25,3 +25,4 @@ export const EditTodoForm =({todoText,handleSubmit,handleEdit,todo,todos,setTodo
         </form>
     )
 }
+export default EditTodoForm
