@@ -10,7 +10,8 @@ export const EditTodoForm =({todoText,handleSubmit,handleEdit,todo,todos,setTodo
             <input 
           className="todo-input"
             type='text'
-            value={todoText}
+            defaultValue={todoText}
+         
             id='newInput'
             onChange={e=>setUpdatedValue(e.target.value)}
             />

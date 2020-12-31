@@ -79,7 +79,7 @@ setEdit = (id,text)=>{
             updatedValue={updatedValue} setUpdatedValue={this.setUpdatedValue}/>  </div>)
             :
             <EditTodoForm handleSubmit={this.handleSubmit} setUpdatedValue={this.setUpdatedValue}
-            todoText={todoText}
+            todoText={todoText}updatedValue={updatedValue}
             />
             )
         }
